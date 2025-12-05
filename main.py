@@ -17,8 +17,15 @@ if user_choice == 1:
     print(f"....ты накопишь {saved_cash} рублей !!!!!!!!!!!!!!!!")
 elif user_choice == 2:
     print("Привет я флауи ")
+    goal = int(input("Сколько ты хочешь накопить: "))
     saved_cash = int(input("Введи сколько ты уже накопил(пока я пью лимонад): "))
     added_cash = int(input("Введи сколько ты будешь копить пока я взламываю твой комп "))
+    days = 0
+    while saved_cash < goal:
+        saved_cash = saved_cash + added_cash
+        days = days + 1
+        print(f"день номер {days}, уже накопили - {saved_cash}")
+
 else:
     print("Хахахахахахаххахахаххахахахаххахахахахахахах")
 
